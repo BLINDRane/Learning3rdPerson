@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-
     public static InputManager instance { get; private set; }
 
     private Controls controls;
@@ -42,7 +41,7 @@ public class InputManager : MonoBehaviour
         };
 
         controls.Locomotion.Look.performed += controls => look = controls.ReadValue<Vector2>();
-    }
 
+    }
 
 }
